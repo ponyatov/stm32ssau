@@ -1,0 +1,4 @@
+STM32 support library for SSAU ASCL
+(c) Dmitry Ponyatov <dponyatov@gmail.com>
+
+hosted: git@github.com:ponyatov/stm32ssau.git
