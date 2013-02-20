@@ -18,4 +18,16 @@
 	</buildSpec>
 	<natures>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>qemu/stderr.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/ARM/Qemu/stderr.txt</locationURI>
+		</link>
+		<link>
+			<name>qemu/stdout.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/ARM/Qemu/stdout.txt</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

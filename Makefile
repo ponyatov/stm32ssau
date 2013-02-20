@@ -14,9 +14,12 @@ all:
 	$(LD) -T ld.ld s.o c.o -o elf.elf
 	$(TARGET)-objdump -d elf.elf
 	$(TARGET)-objcopy -O binary elf.elf bin.bin
+	#qemu-system-armw -M lm3s811evb -kernel bin.bin -s -S 
+	# -cpu cortex-m3 -kernel bin.bin -s -S
 
 clean:
 	rm *.o *.elf *.bin
 
-#debug:
+#debug: bin.bin elf.elf
+#	C:\ARM\Qemu\qemu-system-armw.exe -cpu cortex-m3 -kernel bin.bin -s -S
 #	qemu-arm -cpu cortex-m3 -B 0x08000000 -g 1234 CMSIS_example.out
