@@ -1,5 +1,6 @@
 git config --global user.email "dponyatov@gmail.com"
 git config --global user.name "Dmitry Ponyatov"
+git config --global push.default simple
 pause
 exit
 
