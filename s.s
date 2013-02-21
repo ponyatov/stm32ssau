@@ -3,9 +3,9 @@
 .section .vectors
 .global vectors
 vectors:
-	.long sec_stack_end
-	.word Reset_Handler+1
-	B Reset_Handler /* Reset */
+@	.long sec_stack_end
+@	.word Reset_Handler+1
+	B Reset_Handler+1 /* Reset */
 	B . /* Undefined */
 	B . /* SWI */
 	B . /* Prefetch Abort */
